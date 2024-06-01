@@ -1,0 +1,34 @@
+\chapter{App Implementation}
+
+\section{Infrastructure Setup}
+
+Using common three tier architecture by isolating the presentation tier, logic tier and the data tier, we allow development teams to create flexible and reusable applications. The three-tier setup can also be modified to n-tier or multi-tier architecture to accommodate other parts of client-server application such as CDN, media-server and others. \cite{richards2020fundamentals} On top of that, the modular development process has helped us integrate applications with multiple code bases, exploiting the best features from each of its programming ecosystem. Here, we are benefited with comfort that back-end, front-end and database can be replaced in real-time as long as our business logic holds integrity.
+
+\subsection{Data tier}
+
+We improved our database's ER model progressing through the different stages of project.
+
+\begin{description}
+	\item[Development Version] Prioritizing development speed and resilience to changes, we opt for MongoDB to ideate and test on our relations. This streamlined speed on the product side.
+	\item[Prodution Version] As our ER model mature over certain development period, we opt to move for PostgreSQL relational database.
+\end{description}
+
+\subsection{Logic tier}
+
+Both production and development version uses RESTful services with the standard HTTP specifications for authentication and data transfer.
+
+\begin{description}
+	\item[Development Version] We applied Node.JS for rapid prototyping.
+	\item[Prodution Version] As our API are stable, we moved to Actix (based on rust programming language). We do not need extra runtime now and a single lightweight binary is much more performant than the development version.
+\end{description}
+
+\subsection{Presentation tier}
+
+For design of the elements, both production and development version utilizes TailwindCSS and custom components created on top of it. For prototyping User Interface (and basic UX), Figma came into use in our team.
+
+\begin{description}
+	\item[Development Version] We applied Next.JS as our team was familiar with it.
+	\item[Prodution Version] We moved to using faster and lighter JS library (SvelteKit) with WebSocket for uninterrupted data changes. Now, our application is updated accross the client nodes in real time without bothering any load to the database or back-end side.
+\end{description}
+\clearpage
+%=========================================================

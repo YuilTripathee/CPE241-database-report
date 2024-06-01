@@ -1,0 +1,81 @@
+\chapter{Introduction}
+
+\section[Project Details]{Project Design Brief}
+
+\subsection{Project Description}
+
+We aim to digitize hotel property management system. In comparison to existing market offerings, we also attempt to provide unique value proposition by being cost effective and lean than others. This helps businesses guarantee easy management and supervision, less workload, and consistency on both information and business domains.
+
+\subsection{Project Goals}
+
+\begin{description}
+	\item[Adequate record keeping] This is achieved by understanding and implementing database design for Hotel System using ER diagram.
+	\item[Reduced fraud incidence] We make sure transaction holds consistency and integrity, compliant with the selected database program (relational database should have ACID compliant and non-relational comply with CAP by design).
+	\item[Data-level security] Implemented using role based access control by design.
+	\item[Reduced operational costs] Having a documented data dictionary can help the software scale and port to other branches.
+\end{description}
+
+\subsection{Project Scope}
+
+\begin{description}
+	\item[Business premises:] Our client has a hotel at \textbf{only 1 location}. The scope is constrained in order to boost software development turnaround period such that rapid feedback can be received from hospitality sector for customization rather than building a complex monolith application and making huge expensive changes later on.
+\end{description}
+
+\subsubsection{In-scope Functions}
+
+We deduce functional requirements of our system by being centered on in-scope functions. \cite{fulton2017requirements}
+
+\begin{enumerate}
+	\item Guest information
+	\item Staffs (management and ground staff)
+		\item Ground staff information
+		\item Task ticket for Ground Staff
+	\item Job category and position
+	\item Customer reservation (booking)
+			\subitem Check in and Check out
+			\subitem Seasons discount
+			\subitem Invoicing (could go through service package)
+	\item Room (physical status)
+	\item Room again (features and booking status)
+		\subitem Room Rate Code
+	\item Room types (bedroom, conference, banquet)
+	\item Services (catering and others)
+\end{enumerate}
+
+\subsubsection{Out-scope Functions}
+
+Some of the non-functional requirement were eased up because it does not particularly address the scope of neither database design concept nor core hotel business functions:
+
+\begin{description}
+	\item[Software Infrastructure Security:] Within this project only basic authentication and RBAC (Role Based Access Control) will be exercised in the database design \& implementation phase. Security issues related to server infrastructure, networking setup and human factors were dismissed as part of this project's requirements.
+	\item[Relevant industrial compliance:] We will only be focusing on quality of software and standards associated to it. Regulatory issues compliant with hospitality industry will be implemented as client's customization needs following the completion of required functional requirement.
+\end{description}
+
+% \section[QFD]{Selection of Features by QFD - Quality Functions Deployment}
+
+\section[Team member's responsibilities]{Team member's responsibilities}
+
+All members in the group had considerably equal amount of stake when it comes to deciding relational model of the database, normalization and transaction. However, tasks other than database design and implementation were split by respective member's area of expertise. Also, each members individually designed couple of complex query reading and/or manipulating the data from more than two relations.
+
+\begin{description}
+	\item[COMMON] tasks include database design using ER model, implementation in both SQL and NoSQL platforms with individual bench-marking, review, \& performance evaluation. We also designed form and reports query together using DML and Mongo API together.
+	\item[3411 and 3438] performed back-end integration, translate SQL output to a from that can be rendered on user's end (JSON for web and mobile app platforms), apart from designing databases.	
+	\item[3446 and 3448] designed forms and reports \& implemented on front-end stack using NextJS, apart from database related works.
+	\item[3480] handled literature review, business domain analysis, full stack integration and documenting the project, apart from database design and implementation.
+\end{description}
+
+\section[Project deliverable]{Expected project deliverable}
+
+By the completion of this project, the development team is committed to deliver the following resources associated with this project:
+
+\begin{enumerate}
+	\item Project Report
+	\item ER Model Diagram
+	\item Data dictionary
+	\item User Interface (Form and Report Design)
+	\item Major User Views
+	\item Source codes (for application and related SQL query)
+\end{enumerate}
+
+\clearpage
+%=========================================================

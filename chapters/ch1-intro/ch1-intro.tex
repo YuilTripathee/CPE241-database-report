@@ -1,0 +1,57 @@
+%
+% File: chap01.tex
+% Author: Victor F. Brena-Medina
+%
+% \let\textcircled=\pgftextcircled
+\chapter{Introduction}
+
+Although this is a coding scheme design for labeling the projects, this system should also be applicable for different product lineup within the same project. This is very useful since each of them can have their individual product documentation, user manuals and other product-specific elements.
+
+We have taken references from different industrial product coding schemes, names used in semiconductor parts designations and various technical product lineup schemes. \cite{thomas2016developing}
+
+\section{General Design Requirements}
+
+Here are some general guidelines for the design requirements.
+
+\begin{description}
+    \item[Consistency] to avoid ambiguities in identifying individual project (in an organization) and each projects should be clearly distinguishable.
+    \item[Hierarchy] to apply categorization by their features, similarities and differences.
+    \item[Scalability] for the design to adapt with increasing number of product, having room to record the past projects as well  provide code-names for the newer ones.
+    \item[Semantics] to make the name easy to remember, simple and should have a meaning associated to the product, especially for the large number of products. \cite{Kohoeo2023Thesis}
+    \item[Documentation] is required to share your coding scheme convention when working in teams \& should be preserved for future references.
+    \item[Localization] to get region specific descriptor, can be used to indicate the targeted market or place of manufacture.
+   \item[Branding] because a good coding scheme also adds brand value to your product or project.
+    \item[Integration] since coding scheme should be able to easily fit with supply chain management systems.
+    \item[Regulatory compliance] as we should also try not to clash your coding scheme with the others (persons or institutions), which can cause disputes and legal recognition like trademarks issuance, certifications, and even in marketing.
+\end{description}
+
+\subsection{Structural Design requirements}
+
+The length, hierarchy, structure of the coding scheme itself influences the  effectiveness in communication and documentation for the individual project work and also within the team involved. Therefore, the level of detail in the coding scheme should be designed considering the variation between product (wide).
+
+There are also cases where we need to administer with intense iteration of the same product (depth).
+
+\subsection{Functional Design requirements}
+
+When we deal with the functional design for the product/process coding schemes, we might have to consider feature designs, functionality, design process, user base, context, etc. \cite{Kohoeo2023Thesis}
+
+While addressing the semantic design requirements, we should attempt making the coding scheme as the short metadata for the project. Having a short introduction just by looking at product scheme adds value to the coding scheme and make it relevant over the use of digital encoding such as UUID scheme.
+
+\section{Use of coding scheme}
+
+Broadly, we have some general use cases where coding scheme is important to have in our project.
+
+\begin{description}
+    \item[Project management tools] We use a lot of software tools in our company to manage projects and share related information within our team being specific to a project. Having proper coding scheme can help us distinguish the projects (sub-projects with minor variation) very effectively. However, carrying longer coding scheme version of the product lineup can be troublesome during the general communication (Slack and Discord channels for examples). Therefore, solution to this is having an alias that is catchy and suitable for branding.
+
+    \item[Documentation] Coding scheme will make it easier to have different iterations of documentation in a well organized and easily accessible manner for both web and print versions.
+
+    \item[Technical Support] Having a good coding scheme can help the clients and business owner identify their product effectively and proceed to troubleshooting \& feedback on time, resulting in increased operational effectiveness.
+
+    \item[Modularity] If multiple projects are labeled correctly with versioning, it helps in compartmentalizing the project and developing the isolated modules independently. Therefore, the bigger project work can be gracefully split into standalone parts that can be subject to team division work or external contract.
+\end{description}
+
+Although it solves a lot of issue in the operational side of the organization, it is not a good idea to use in every phase of product life cycle. And it is better to avoid the coding scheme in the marketing and delivery side \& follow their own branding strategy for the product. Coding schemes gives the most effective results in the development and maintenance part of product life cycle.
+
+\clearpage
+%=========================================================

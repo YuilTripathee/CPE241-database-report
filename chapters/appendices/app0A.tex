@@ -1,0 +1,54 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Appendix A}
+\label{app:app01}
+
+(Brainstorming notes - project briefing) 
+
+GitHub: \href{https://github.com/TeeThanakit/mariana-hotel}{https://github.com/TeeThanakit/mariana-hotel}
+
+\textbf{Project name:} Hotel Management System
+
+\textbf{Potential features:} Hotel Management, Reservation, Check-in/Checkout, Charges and Invoicing, House Cleaning, Room Rate Code, Seasons, Setup\\
+
+\textbf{OUR SOFTWARE STACKS}
+
+\begin{description}
+	\item[Data Layer] Postgres (database) (use diesel, sqlx, or SeaORM), Redis or MongoDB for dev. period
+	\item[Logic Layer:] Actix-web on Rust (production), Node.JS on Express (development version)
+	\item[Presentation Layer:] Tailwind CSS (add some custom components that work with SvelteKit), Svelte (with Typescript and SvelteKit) for interactivity
+\end{description}
+
+This is just initial one.\\
+
+\textbf{DEVELOPMENT INSTRUCTIONS}
+
+\begin{enumerate}
+	\item Choose a topic (already selected above).
+	\item Clearly define the detail and scope of the project.
+	\item Define major user views (user roles) and user permission levels (Note that your project must have at least three separate roles for users).
+	\item Design your database and represent the design with an ER diagram with primary key, foreign key, and multiplicity. (Note that your project must have at least 7 tables so that each person in your group must have at least 1 complex transaction form with modification in 2 or more tables) and 1 advanced analytic report to (using at least three tables with aggregation functions) in the final project).
+		\subitem Example of complex transaction form: The form must be able to modify at least 3 tables with one action (one click).
+		\subitem Example of Analysis Report: The report must use at least one aggregate function. (e.g., Count, Sum, Avg., Min., and Max) and be used for decision making.
+	\item Select appropriate data types for each attribute and generate a data dictionary (showing field names, constraints, and data types) for your database
+	\item Develop a web/mobile application to connect with the designed database. (Note that each person in your group must have at least 1 complex transaction form (with modification in 2 or more tables) and 1 advanced analytic report to (using at least three tables with aggregate functions) in the final project).
+\end{enumerate}
+
+TBD for later changes on plans.\\
+
+\textbf{GRADING CRITERIA:} 
+
+This is the criteria for the final project grading: 
+
+\begin{enumerate}
+	\item Database design (30\%): The ER model or database model must be designed correctly for the topic selected. 
+	\item Report (20\%): The detail and scope of the project, user permission level (Insert, Delete, Update, View) with each table for each user role, and data dictionary must be presented clearly and correctly.
+	\item Web or Mobile Application (30\%): The form and analysis report represented in the developed application must be performed completely and correctly. 
+	\item Presentation (20\%): Make your presentation interesting, clear to the point, within a time limit (10 minutes), and correct language usage.
+\end{enumerate}
+
+\

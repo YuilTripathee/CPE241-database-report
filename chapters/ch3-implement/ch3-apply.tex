@@ -1,0 +1,21 @@
+\chapter{Implementation Measures}
+
+Though we have conceptual design for having a product scheme, it is best to still apply the following measures for the convenience and simplicity.
+
+\begin{itemize}
+    \item Try not to be rigid with matching the product brand name with the ones generated using the product lineup coding schemes. This develops the friction in different organization silos having separate perspective to look it at a product. For example, marketing team could try non-tangible measure in terms of naming to connect with client's sentiment while R\&D team would love to be more functional in terms of naming schemes.
+
+    \item Using the product coding scheme can help work with project management tools more conveniently. However, this practice should be limited for the R\&D use only. It is recommended to implement separate system such as product ID, SKU, or UUID based indexing despite the fact that our coding scheme is well enough to accommodate the larger product stockpiles.
+
+    \item It is a must to document a coding scheme first (with compatibility to general product coding guidelines). The documentation for coding (naming) scheme of the model lineup must include the semantics, utility, intent of categorization of the product releases based on tangible characteristics.
+\end{itemize}
+
+\section[Documenting Coding Scheme]{Documenting Product Coding Scheme for the particular lineup}
+
+We can start with a branding name for the project initially and gradually develop the coding scheme over time. While designing a coding scheme we consider holistic thinking as well as good design thinking practices (to get the hierarchy of the coding order).
+
+It is also a good idea to consider the precautions as mentioned above in the list. Potential applications (utility, criticality and relevance) may impact the design of coding scheme affecting from the overall size of the product lineup code to the required verbosity of the coding scheme.
+
+\textbf{Note}: We have realized that the REGEX expression can differ on product-to-product basis for the coding scheme. So, although we can't generalize the naming scheme for entire fleet of product we still can have a REGEX expression following a pattern in the same product family.
+
+\clearpage
