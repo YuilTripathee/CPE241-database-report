@@ -1,2 +1,3 @@
-# DCODE-1-A
-DSKY-MOD-1
+# CPE241 Database Project
+
+Check project report at `Main.pdf`.
